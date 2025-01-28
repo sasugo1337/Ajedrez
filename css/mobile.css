@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 2.5rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  padding: 0.625rem 2.5rem;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2vw;
+  background-color: #da7e4a;
+  border-radius: 1rem;
+  border: solid 1vw black;
+}
+
+.columna {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 1vw black;
+}
+
+.columna:first-child {
+  border-left: solid 1vw black;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.columna:last-child {
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.casilla {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border-bottom: solid 1vw black;
+}
+
+.casilla:first-child {
+  border-top: solid 1vw black;
+}
+
+.negro {
+  background-color: #407093;
+}
+
+.blanco {
+  background-color: #dbedff;
+}
+
+img {
+  width: 95%;
+}
